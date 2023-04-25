@@ -5,7 +5,7 @@ import yfinance as yf
 
 def download_and_store_to_csv(tickerStrings, start, end):
     for ticker in tickerStrings:
-        data = yf.download(ticker, group_by="Ticker", start="2017-01-01", end="2017-04-30")
+        data = yf.download(ticker, group_by="Ticker", start=start, end=end)
         data['ticker'] = ticker  # add this column because the dataframe doesn't contain a column with the ticker
         data.to_csv(f'ticker_{ticker}.csv')  # ticker_AAPL.csv for example
         
