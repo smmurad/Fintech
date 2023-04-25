@@ -8,6 +8,17 @@ import ticker_util as tu
 style.use('ggplot')
 
 ## TUTORIAL 4
+# import mplfinance as mpf
+# df = tu.get_ticker_from_csv('MSFT')
+# mpf.plot(df, type='candle', style='charles',
+#             title='Title',
+#             ylabel='Ylabel',
+#             ylabel_lower='Ylabel_lower',
+#             figratio=(25,10),
+#             figscale=1,
+#             mav=50,
+#             volume=True
+#             )
 
 
 ## TUTORIAL 3
